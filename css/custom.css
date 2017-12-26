@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+body {
+  padding-top: 7px;
+  background-color: black;
+  color: white;
+}
+.container{
+	padding-top: 90px;
+	padding-bottom: 350px;
+  	padding-left: 0px;
+  	width: 80%;
+
+}
+
+.nav-brand{
+	text-decoration-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+a:focus, a:hover {
+    color: white;
+    text-decoration: underline;
+    color:#9f9f9f;
+}
+
+.nav > li > a:hover {
+    background: none;
+    color: #9f9f9f;
+}
+
+.nav > li.active {
+    text-decoration: underline;
+}
+
+.nav > li{
+    font-size: 30px;
+    font-family:"dejavu serif";
+}
+.navbar{
+	padding-top: 5px;
+
+}
+
+.navbar-brand  {
+	font-family:"dejavu serif";
+  float: left;
+  height: 50px;
+  padding: 15px 10px;
+  font-size: 40px;
+  line-height: 10px;
+  color: white;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: right;
+    margin:0 auto;
+}
+canvas { 
+  background: none; 
+  display: block; 
+  margin: 0 auto;
+  position: fixed;
+  left: 0px;
+  bottom: -210px;
+  z-index: -1000;
+}
+
+#canvasBar{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid white;
+    height: 300px;
+    z-index: 1000;
+
+}
+
+p{
+  font-size: 1.4em;
+  font-family:"dejavu serif";
+}
+h2{
+  font-size: 2.1em;
+  font-family:"dejavu serif";
+  font-weight: bold;
+}
+h3{
+  font-size: 1.6em;
+  font-family:"dejavu serif";
+}
+.row{
+  background-color: black;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+    background-color: black;
+    border:2px solid white
+
+}
+
+.col-md-4,.col-sm-4,.col-lg-4{
+  padding-right:25px;
+  padding-left:25px;
+}
+
+#skytext{
+  position: fixed;
+  left: 20px;
+  bottom: 10px;
+  background-color: black;
+
+}
+.strong{
+  font-weight: bold;
+}
+

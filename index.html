@@ -1,0 +1,88 @@
+
+<html lang="en">
+  
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="keywords" content="charles thomas, personal website, developer, portfolio">
+    
+    <meta name="description" content="A personal website for charles thomas. Download my resume, find a link to my github, or send me a message.">
+    
+    <meta name="author" content="Charles Thomas">
+   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111152479-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111152479-1');
+    </script>
+
+    
+    <link rel="icon" href="images/icon.png">
+    <title>charles howard thomas</title>
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./">charles thomas</a>
+        </div>
+        <div id="navbar" class="">
+          <ul class="nav navbar-nav">
+            <li id='nhome'><a href="#">me</a></li>
+            <li id='nresume'><a href="#">resume</a></li>
+            <li id='ncontact'><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+
+        <div id = 'home' class="col-sm-4 col-md-4 col-lg-4" >
+          <h2>me</h2>
+          <p>my name is charles thomas. i live in new york city and i'm a sophomore in the college of arts and sciences at new york university. i study computer science and web design. i am a software developer and make websites. i believe in minimalist design (like this website i made). i have a dog named hugo and i am the captain of my quidditch team.</p>
+        </div>
+
+        <div id = 'resume' class="col-sm-4 col-md-4 col-lg-4">
+          <h2><a href="resume.pdf">resume</a> </h2>
+          <p>click <a class="strong" href="resume.pdf">here</a> to download my full resume as a pdf. i have experience in python, java, html, css, and javascript. mathematics is a strong interest of mine. i speak conversational level french and have lots of experience working with children. check out my <a class="strong" href="https://github.com/Charleshthomasiii">github</a>.</p>
+        </div>
+
+        <div id = 'contact' class="col-sm-4 col-md-4 col-lg-4">
+          <h2>contact</h2>
+          <p>if you would like to send me a message, enter it into the box below along with your email.</p>
+          <form action="https://formspree.io/charlie.h.thomas@gmail.com" method="post">
+            <p>email <input type="email" name="email" required></p>
+            <p>message </p>
+            <textarea name="message" cols="40" rows="5"></textarea>
+            <p><input type="submit" value="Send"></p>
+          </form>
+
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <canvas id="myCanvas" width="3000" height="700"></canvas>
+    <!-- <a href="this.html"><div id="canvasBar"></div></a> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
