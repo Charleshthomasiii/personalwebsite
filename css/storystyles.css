@@ -1,31 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 body {
   padding-top: 7px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .container{
 	padding-top: 90px;
-	padding-bottom: 350px;
-  	padding-left: 0px;
-  	width: 80%;
-
+  padding-left: 0px;
+  width: 800px;
 }
-#story{
-  white-space: pre;
+
+@media only screen and (max-width: 830px) {
+  .container{
+    padding-top: 90px;
+    padding-left: 0px;
+    width: 90%;
+  }
+}
+
+
+#camera{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#robot{
+  position: absolute;
+  bottom: : 0px;
 }
 .nav-brand{
-	text-decoration-color: white;
+	text-decoration-color: black;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 
 a:focus, a:hover {
-    color: white;
+    color: black;
     text-decoration: underline;
     color:#9f9f9f;
 }
@@ -55,7 +69,7 @@ a:focus, a:hover {
   padding: 15px 10px;
   font-size: 40px;
   line-height: 10px;
-  color: white;
+  color: black;
 }
 .navbar{
     position: absolute;
@@ -85,17 +99,33 @@ canvas {
 }
 
 p{
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family:"dejavu serif";
 }
-h2{
-  font-size: 2.1em;
+
+.email{
+  font-style: italic;
+}
+h1{
+  font-size: 2.2em;
   font-family:"dejavu serif";
-  font-weight: bold;
+  text-align: center;
+}
+h2{
+  font-size: 1.3em;
+  font-family:"dejavu serif";
+  font-style: italic;
 }
 h3{
   font-size: 1.6em;
   font-family:"dejavu serif";
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+p {
+    margin: 0 0 20px;
 }
 .row{
   background-color: black;
