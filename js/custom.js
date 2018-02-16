@@ -48,8 +48,18 @@
     var stateDownCounter=180;
     var stateExist=false;
     var stateMake =false;
+    var drawWindow=false;
+    var drawMoon=false;
+    var moon=false;
     
     function randomSky(){
+      if(moon==false){
+        console.log("2");
+        if (Math.random()<.01) {
+          console.log("3")
+          drawMoon=true;
+        }
+      }
       if(x + dx > width-ballRadius) {//too far to the right
         y=(6*height/8)-ballRadius;
         dx=-2;
@@ -61,6 +71,10 @@
         }
 
         if(dx>0){//moving right
+          if ((Math.random()<.10)&&(y<(height/2))&&(counter>3)&&(xCounter-counter>3)) {
+            drawWindow=true;
+            console.log("1");
+          }
           if(counter>xCounter){ //if its time to change directions
             if(y>(height/2)){ //if its below half
               dy=-2; //start moving up
@@ -240,18 +254,46 @@
       y=y-dy;
       stateDownCounter--;
     }
+    function dWindow() {
+      ctx.beginPath();
+      ctx.lineWidth="2";
+      ctx.strokeStyle="white";
+      ctx.rect(x,y+5+Math.random()*130,1,4);
+      ctx.stroke();
+      drawWindow=false;
+    }
+    function dMoon() {
+      ctx.beginPath();
+      ctx.fillStyle="white";
+      ctx.lineWidth = 2;
+      ctx.arc(55, 85, 40, 0, Math.PI * 2, true);
+      ctx.fill();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.fillStyle="black";
+      ctx.arc(85, 85, 40, 0, Math.PI * 2, true);
+      ctx.fill();
+      drawMoon=false;
+      moon=true;
+    }
 
     function drawBall(){
       ctx.fillStyle="white";
       ctx.beginPath();
       ctx.arc(x,y,ballRadius,0,2*Math.PI);
-      //ctx.fillstyle="#FF0000";
-      //ctx.strokeStyle="red";
       ctx.fill();
       ctx.closePath();
       }
     function draw(){
       drawBall();
+      if(drawWindow==true){
+        dWindow();
+      }
+      if (drawMoon==true) {
+        console.log("drawingmoon");
+        dMoon();
+      }
       requestAnimationFrame(draw);
       //randomSky();
       if(stateMake==true){
@@ -273,8 +315,6 @@
       }
 
     }
-      draw();
-      draw();
       draw();
       draw();
 
