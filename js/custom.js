@@ -81,7 +81,7 @@
               dx=0;
               xCounter = (Math.random()*50)+35; //next target
               counter=0; //resets counter
-              if((stateExist==false) && (Math.random()>.8)){
+              if((stateExist==false) && (Math.random()>.6)){
                 stateExist=true;
                 stateMake=true;
               }
@@ -266,13 +266,13 @@
       ctx.beginPath();
       ctx.fillStyle="white";
       ctx.lineWidth = 2;
-      ctx.arc(55, 85, 40, 0, Math.PI * 2, true);
+      ctx.arc(55+x, 40, 40, 0, Math.PI * 2, true);
       ctx.fill();
       ctx.closePath();
 
       ctx.beginPath();
       ctx.fillStyle="black";
-      ctx.arc(85, 85, 40, 0, Math.PI * 2, true);
+      ctx.arc(85+x, 40, 40, 0, Math.PI * 2, true);
       ctx.fill();
       drawMoon=false;
       moon=true;
@@ -315,6 +315,8 @@
       }
 
     }
+      draw();
+      draw();
       draw();
       draw();
 
