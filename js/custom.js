@@ -1,7 +1,4 @@
-//$( document ).ready(function() {
-// Handler for .ready() called.
-
-
+//Thanks for taking a look at my source code. Feel free to copy past it into your own website, no attribution required.
 
 $("#home").hide();
 $("#resume").hide();
@@ -29,6 +26,8 @@ $("#nhome").click(function() {
 });
 
 
+//The following code creates the background skyline using the canvas feature.
+//The skyline is randomly generated with some basic constraints, so each time the website is loaded you see a unique skyline.
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -124,7 +123,7 @@ function randomSky() {
     counter++;
 
 }
-
+//These are all unfinished potential future drawings to add to the skyline
 function signature() {
 
 
@@ -141,8 +140,8 @@ function bridge() {
 function threeD() {
 
 }
-
-function stateUp() {
+//Stateup describes the in which the empire state building is drawn.
+function stateUp() { 
     switch (true) {
         case (stateUpCounter == 0): //start of the buildin
             dy = 0;
@@ -266,7 +265,7 @@ function dWindow() {
     ctx.stroke();
     drawWindow = false;
 }
-
+//drawing the moon.
 function dMoon() {
     ctx.beginPath();
     ctx.fillStyle = "white";
@@ -321,5 +320,3 @@ draw();
 draw();
 draw();
 draw();
-
-//});
