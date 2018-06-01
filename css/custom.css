@@ -7,7 +7,7 @@ body {
 
 .container { 
   /*add setting such that te padding top is smaller when desktop is detected*/
-    padding-top: 90px;
+    padding-top: 190px;
     padding-bottom: 350px;
     padding-left: 0px;
     width: 80%;
