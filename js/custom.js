@@ -50,6 +50,8 @@ var stateMake = false;
 var drawWindow = false;
 var drawMoon = false;
 var moon = false;
+var firstColor = "white";
+var secondColor = "black"
 
 function randomSky() {
     if (moon == false) {
@@ -260,7 +262,7 @@ function stateDown() {
 function dWindow() {
     ctx.beginPath();
     ctx.lineWidth = "2";
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = firstColor;
     ctx.rect(x, y + 5 + Math.random() * 130, 1, 4);
     ctx.stroke();
     drawWindow = false;
@@ -268,14 +270,14 @@ function dWindow() {
 //drawing the moon.
 function dMoon() {
     ctx.beginPath();
-    ctx.fillStyle = "white";
+    ctx.fillStyle = firstColor;
     ctx.lineWidth = 2;
     ctx.arc(55 + x, 40, 40, 0, Math.PI * 2, true);
     ctx.fill();
     ctx.closePath();
 
     ctx.beginPath();
-    ctx.fillStyle = "black";
+    ctx.fillStyle = secondColor;
     ctx.arc(85 + x, 40, 40, 0, Math.PI * 2, true);
     ctx.fill();
     drawMoon = false;
@@ -283,7 +285,7 @@ function dMoon() {
 }
 
 function drawBall() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = firstColor;
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, 2 * Math.PI);
     ctx.fill();
