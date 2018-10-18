@@ -3,8 +3,18 @@ body {
     padding-top: 7px;
     background-color: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
+#desktop{
+        display: none;
+    }
+
+@media only screen and (min-width : 1200px) {
+    #desktop{
+        display: inline;
+    }
+}
 .container { 
   /*add setting such that te padding top is smaller when desktop is detected*/
     padding-top: 190px;
@@ -45,7 +55,6 @@ a:hover {
 
 .nav>li {
     font-size: 30px;
-    font-family: "dejavu serif";
 }
 
 .navbar {
@@ -53,7 +62,6 @@ a:hover {
 }
 
 .navbar-brand {
-    font-family: "dejavu serif";
     float: left;
     height: 50px;
     padding: 15px 10px;
@@ -91,18 +99,15 @@ canvas {
 
 p {
     font-size: 1.4em;
-    font-family: "dejavu serif";
 }
 
 h2 {
     font-size: 2.1em;
-    font-family: "dejavu serif";
     font-weight: bold;
 }
 
 h3 {
     font-size: 1.6em;
-    font-family: "dejavu serif";
 }
 
 .row {
