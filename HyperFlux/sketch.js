@@ -48,7 +48,7 @@ function setup() {
   text(text3, 100,400,1000,500);
   text(text4, 100,450,1000,500);
   text(text6, 100, 500, 1000, 500);
-  text(text7, 100, 550, 1000, 500);
+  //text(text7, 100, 550, 1000, 500);
 
   console.log("state"+state);
 
