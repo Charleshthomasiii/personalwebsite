@@ -53,7 +53,7 @@ class preyCreature {
       //apply the final rotation
 
       rotate(this.previousAngle);
-  
+      fill(0);
       ellipse(0, 0, this.size, this.size);
       fill(0);
 
@@ -147,8 +147,8 @@ class preyCreature {
         this.blink=20;
       }
       else{
-        ellipse(this.size/7,-this.size/7,this.size/4,this.size/4);
-        ellipse(this.size/7,this.size/7,this.size/4,this.size/4);
+        ellipse(this.size/7,-this.size/7,this.size/7,this.size/7);
+        ellipse(this.size/7,this.size/7,this.size/7,this.size/7);
       }
     }
     if (this.blink>0) {

@@ -20,14 +20,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="icon" href="images/icon.png">
     <title>charles howard thomas</title>
+    <script src="p5/p5.js" type="text/javascript"></script>
+    <script src="p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="p5/addons/p5.sound.js" type="text/javascript"></script>
+
     <!-- Bootstrap core CSS -->
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link type="text/css" href="css/custom.css" rel="stylesheet">
-    <script src="../p5/p5.js" type="text/javascript"></script>
-    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
-    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
     <link rel="icon" href="images/icon.png">
+    <script src="plant.js" type="text/javascript"></script>
+    <script src="predatorCreature.js" type="text/javascript"></script>
+    <script src="preyCreature.js" type="text/javascript"></script>
     <script src="sketch.js" type="text/javascript"></script>
 
 </head>
@@ -41,12 +45,12 @@
             <div id="navbar" class="">
                 <ul class="nav navbar-nav">
                     <li id='nhome'><a href="#">Me</a></li>
-                    <li id='nresume'><a href="#">Experience</a></li>
+                    <!-- <li id='nresume'><a href="#">Experience</a></li> -->
                     <li id='ncontact'><a href="#">Contact</a></li>
-                    <li><a href="date.html">Writing</a></li>
-                    <li><a href="poems.html">More Writing</a></li>
-                    <li id="desktop"><a href="HyperFlux">HyperFlux</a></li>
-                    <li id="desktop"><a href="EcoSect">EcoSect</a></li>
+                    <!-- <li><a href="date.html">Writing</a></li> -->
+                    <!-- <li><a href="poems.html">More Writing</a></li> -->
+                    <!-- <li id="desktop"><a href="HyperFlux">HyperFlux</a></li> -->
+                    <!-- <li id="desktop"><a href="EcoSect">EcoSect</a></li> -->
                 </ul>
             </div>
         </div>
@@ -55,17 +59,17 @@
         <div class="row">
             <div id='home' class="col-sm-4 col-md-4 col-lg-4">
                 <h2>Me</h2>
-                <p>I'm a junior at New York University studying computer science. I'm a software developer, web designer, and writer. I believe in minimalism (like this website I made). I have a dog named hugo and I'm on the NYU quidditch team.</p>
+                <p>I'm a senior at NYU studying computer science. I'm a software developer, designer, and writer.</p>
             </div>
-            <div id='resume' class="col-sm-4 col-md-4 col-lg-4">
+            <!-- <div id='resume' class="col-sm-4 col-md-4 col-lg-4">
                 <h2>Experience</h2>
                 <p>
                     Read some of my work by clicking the tabs on the side, or check out my <a class="strong" href="https://github.com/Charleshthomasiii">github</a> to see cool stuff. Send a message in the contact tab if you would like a copy of my resume. I have experience with Python, Java, C, HTML, CSS, JavaScript, and PHP.
                 </p>
-            </div>
+            </div> -->
             <div id='contact' class="col-sm-4 col-md-4 col-lg-4">
                 <h2>Contact</h2>
-                <p>If you would like to send me a message, enter it into the box below along with your email.</p>
+                <p>If you would like to send a message, enter it into the box below along with your email.</p>
                 <form action="https://formspree.io/charlie.h.thomas@gmail.com" method="post">
                     <p>Email
                         <input type="email" name="email" required>
@@ -80,7 +84,7 @@
         </div>
     </div>
     <!-- /.container -->
-    <canvas id="myCanvas" width="3000" height="700"></canvas>
+    <!-- <canvas id="myCanvas" width="3000" height="700"></canvas> -->
     <!-- <a href="this.html"><div id="canvasBar"></div></a> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->

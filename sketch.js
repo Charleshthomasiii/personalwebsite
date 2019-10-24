@@ -1,3 +1,12 @@
+
+function dynamicallyLoadScript(url) {
+    var script = document.createElement("script");  // create a script DOM node
+    script.src = url;  // set its src to the provided URL
+
+    document.head.appendChild(script);  
+}
+
+// dynamicallyLoadScript("js/skyline.js");
 var creatures = [];
 var predators = [];
 var deadCreatures=[];
@@ -10,7 +19,6 @@ var predators = [];
 var deadCreatures=[];
 var plants=[];
 var timecount = 0;
-var sliderY=500; //plus or minus 41 pixels
 var pause = 0;
 var stop = 4;
 var gameend = 0;
@@ -33,7 +41,7 @@ predators = [];
 deadCreatures=[];
 lants=[];
 timecount = 0;
-sliderY=488; //plus or minus 41 pixels
+sliderY=470; //plus or minus 41 pixels
 pause = 0;
 stop = 4;
 gameend = 0;
@@ -45,11 +53,6 @@ numPrey=0;
 numPreds=0;
 numPlants=0;
 pauseTime=0;
-for (var i = 0; i < 10; i++) {
-  creatures.push( new preyCreature(random(width), random(height),100));
-  numPrey+=1;
-}
-predators.push(new predatorCreature(500,500,100));
 numPreds+=1;
 function setup() {
   createCanvas(displayWidth,displayHeight);
@@ -78,7 +81,7 @@ function draw() {
   }
   for (var i = 0; i < creatures.length; i++) {
     if (creatures[i].health>90 && creatures[i].dead==0) {
-      if (random()<.004 && creatures.length<130) {
+      if (random()<.04 && creatures.length<20) {
         creatures.push( new preyCreature(creatures[i].x, creatures[i].y, 80));
         numPrey++;
       }

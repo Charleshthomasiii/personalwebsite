@@ -71,7 +71,7 @@ class predatorCreature {
       pop();      
     }
     else{
-      this.healthFunc();
+      //this.healthFunc();
       var min=50000;
       var chosen;
       for (var i = 0; i<this.preyDecision.length; i++) {
